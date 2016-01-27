@@ -28,16 +28,11 @@
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"崩溃信息" message:@"已获取崩溃信息，将发送邮件" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             SendEmail *mail = [[SendEmail alloc] init];
-//            [mail sendEmailSubjest:@"Title"
-//                           toEmail:@"to@email.here"
-//                         fromEmail:@"from@email.here"
-//                             login:@"from email login"
-//                              pass:@"from email pass"];
-            [mail sendEmailSubjest:@"崩溃日志"
-                           toEmail:@"411126004@qq.com"
-                         fromEmail:@"luyileo23@126.com"
-                             login:@"luyileo23@126.com"
-                              pass:@"lu90531yi"];
+            [mail sendEmailSubjest:@"Title"
+                           toEmail:@"to@email.here"
+                         fromEmail:@"from@email.here"
+                             login:@"from email login"
+                              pass:@"from email pass"];
 
         }];
         [alertController addAction:action];
